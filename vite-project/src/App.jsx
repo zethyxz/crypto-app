@@ -34,6 +34,7 @@ const App = () => {
             { loading && <p>Loading...</p>}
             { error && <div className="error">{error}</div>}
             <div className="controls">
+              <FilterInput filter ={filter} onFilterChange={setFilter} />
               <label htmlFor="limit">Show: </label>
               <select value={limit} id="limit"
                 onChange={(e) => setLimit(Number(e.target.value))}
