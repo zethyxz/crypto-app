@@ -47,7 +47,7 @@ const App = () => {
           />
         }/>
         <Route path='/about' element={<AboutPage />} />
-        <Route path='*' element={<NotFoundPage />}>
+        <Route path='*' element={<NotFoundPage />} />
       </Routes>
       </>
     )
